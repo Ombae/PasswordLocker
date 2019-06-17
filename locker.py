@@ -1,7 +1,6 @@
 #! /usr/bin/env python3
 import pyperclip
-from credentials import User
-from credentials import Credential
+from user_credentials import User, Credential
 
 def create_user(fname,lname,password):
 	'''
@@ -30,3 +29,16 @@ def generate_password():
 	'''
 	gen_pass = Credential.generate_password()
 	return gen_pass
+
+def create_credential(user_name,site_name,account_name,password):
+	'''
+	Function to create a new credential
+	'''
+	new_credential=Credential(user_name,site_name,account_name,password)
+	return new_credential
+
+def save_credential(credential):
+	'''
+	Function to save a newly created credential
+	'''
+	Credential.save_credentials(credential)
