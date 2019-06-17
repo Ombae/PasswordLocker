@@ -74,3 +74,20 @@ class TestCredentials(unittest.TestCase):
 		twitter = Credential('Jane','Twitter','maryjoe','pswd100')
 		twitter.save_credentials()
 		self.assertEqual(len(Credential.credentials_list),2)
+	def tearDown(self):
+		'''
+		Function to clear the credentials list after every test
+		'''
+		Credential.credentials_list = []
+		User.users_list = []
+
+	def test_display_credentials(self):
+		'''
+		Test to check if the display_credentials method, displays the correct credentials.
+		'''
+		self.new_credential.save_credentials()
+		twitter = Credential('Steve','Instagram','Stve','pswd100')
+		twitter.save_credentials()
+		gmail = Credential('Joe','Gmail','joeben','pswd200')
+		gmail.save_credentials()
+		self.assertEqual(len(Credential.display_credentials(twitter.user_name)),2)
