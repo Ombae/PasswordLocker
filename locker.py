@@ -1,12 +1,12 @@
 #! /usr/bin/env python3
 import pyperclip
-from user_credentials import User, Credential
+from credentials import User, Credential
 
-def create_user(fname,lname,password):
+def create_user(first_name,last_name,password):
 	'''
 	Function to create a new user account
 	'''
-	new_user = User(fname,lname,password)
+	new_user = User(first_name,last_name,password)
 	return new_user
 
 def save_user(user):
@@ -16,11 +16,11 @@ def save_user(user):
 	User.save_user(user)
 
 
-def verify_user(first_name,password):
+def verify_user(first_name,last_name,password):
 	'''
 	Function that verifies the existance of the user before creating credentials
 	'''
-	checking_user = Credential.check_user(first_name,password)
+	checking_user = Credential.check_user(first_name,last_name,password)
 	return checking_user
 
 def generate_password():

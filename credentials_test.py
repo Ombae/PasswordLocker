@@ -12,7 +12,7 @@ class TestUser(unittest.TestCase):
 		'''
 		Function to create a user account before each test
 		'''
-		self.new_user = User('Mary','Ng\'ang\'a','pswd100')
+		self.new_user = User('Seth','Ombae,'pswd100')
 
 	def test__init__(self):
 		'''
@@ -59,7 +59,7 @@ class TestCredentials(unittest.TestCase):
 
 	def test__init__(self):
 		'''
-		Test to if check the initialization/creation of credential instances is properly done
+		Test to check if the initialization/creation of credential instances is properly done
 		'''
 		self.assertEqual(self.new_credential.user_name,'Mary')
 		self.assertEqual(self.new_credential.site_name,'Facebook')
