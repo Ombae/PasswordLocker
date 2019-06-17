@@ -57,4 +57,4 @@ As a user I would like:
 This app currently has no known bugs with this app at this stage of development. Should one come across a bug, kindly feel free to give feedback.
 
 ## License
-MIT &copy;2019 https://github.com/Ombae/PasswordLocker/LICENSE
+MIT &copy;2019 https://github.com/Ombae/PasswordLocker/blob/master/LICENSE
