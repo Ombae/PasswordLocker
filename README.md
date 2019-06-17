@@ -42,8 +42,8 @@ As a user I would like:
 ## Running the Application
 * To run the application, in your terminal:
 
-        $ python3.6 locker.py
-        $ python3.6 credentials.py
+        $ chmod +x run.py
+        $ ./run.py
 
 ## Testing the Application
 * To run the tests for the class file:
