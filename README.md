@@ -37,13 +37,13 @@ As a user I would like:
 * In your terminal:
 
         $ git clone https://github.com/Ombae/PasswordLocker
-        $ cd Password-Locker
+        $ cd PasswordLocker
 
 ## Running the Application
 * To run the application, in your terminal:
 
-        $ chmod +x locker.py
-        $ ./password_locker.py
+        $ python3.6 locker.py
+        $ python3.6 credentials.py
 
 ## Testing the Application
 * To run the tests for the class file:
