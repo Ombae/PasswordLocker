@@ -1,6 +1,6 @@
 import unittest
 import pyperclip
-from user_credentials import User, Credential
+from credentials import User, Credential
 
 class TestUser(unittest.TestCase):
 	'''
@@ -116,4 +116,4 @@ class TestCredentials(unittest.TestCase):
 		print(pyperclip.paste())
 
 if __name__ == '__main__':
-	unittest.main(verbosity=2)
+	unittest.main()
