@@ -42,8 +42,8 @@ As a user I would like:
 ## Running the Application
 * To run the application, in your terminal:
 
-        $ chmod +x run.py
-        $ ./run.py
+        $ chmod +x locker.py
+        $ ./locker.py
 
 ## Testing the Application
 * To run the tests for the class file:
