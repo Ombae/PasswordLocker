@@ -150,5 +150,6 @@ def main():
 			print("-"*60)
 			print(' ')
 			print('Oops! Wrong option entered. Try again.')
-if __name__ == 'main':
+
+if __name__ == '__main__':
 	main()
