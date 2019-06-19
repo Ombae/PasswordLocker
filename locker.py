@@ -16,11 +16,11 @@ def save_user(user):
 	User.save_user(user)
 
 
-def verify_user(first_name,last_name,password):
+def verify_user(first_name,password):
 	'''
 	Function that verifies the existance of the user before creating credentials
 	'''
-	checking_user = Credential.check_user(first_name,last_name,password)
+	checking_user = Credential.check_user(first_name,password)
 	return checking_user
 
 def generate_password():
